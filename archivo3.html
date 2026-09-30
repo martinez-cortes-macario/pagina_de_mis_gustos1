@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> MACARIO MARTINEZ</title>
+        <style>
+            header {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #c1c1ef;
+                padding: 10px 20px;
+            }
+            .logo-pequeno{
+                width: 200px;
+                height: auto;
+                display: block;
+            }
+             .promocion-sitio3{
+                width: 250px;
+                height: auto;
+                display: block;
+            }
+            .articulo-principal3{
+                width: 400px;
+                height: auto;
+                display: block;
+            }
+            .logo-cabecera{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: bottom 15px;
+                /*espacio entre la iamgen y el titulo*/                
+            }
+            .barra-navegacion {
+               display:flex;
+               gap: 15px;
+               margin-top: 10px;
+            }
+            .boton-nav{
+                text-decoration: none;
+                color: darksalmon;
+                background-color: bisque;
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-family: sans-serif;
+                transition: background-color 0.3s;
+            }
+            .boton-nav:hover{
+                background-color: rgb(245, 148,1);
+                color:white;
+            }
+            .boton-nav.activo{
+                background-color: #008380;
+                color: white;
+                font-weight: bold;
+            }
+            main{
+                display: flex;
+                gap:20px;
+            }
+
+            aside{
+                width: 25%;
+                background-color: #dcbdf7;
+                padding: 15px;
+            }
+
+            section{
+                width: 75%;
+                background-color: rgb(187, 175, 231);
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0";>Mi sitio web</h1>
+                <nav class="Barra-navegacion">
+                    <a href="archivo1.html" class="boton-nav">Inicio</a>
+                    <a href="archivo2.html" class="boton-nav">Musica</a>
+                    <a href="archivo3.html" class="boton-nav activo">Artista</a>
+                </nav>
+            </div>
+            <img src="imagenes/artista.jpg" alt="Logo de mi sitio web" class="logo-pequeno">
+        </header>
+        <main>
+            <aside>
+                <h3>Publicidad</h3>
+                <img src="imagenes/promocion3.jpg" alt="promocion del sitio" class="promocion-sitio3">
+                <p>Té delicioso y refrescante</p>
+            </aside>
+            <section>
+                <article>
+                    <h2>Articulo principal</h2>
+                    <img src="imagenes/articulo3.jpg" alt="promocion del sitio" class="articulo-principal3">
+                    <p>Britney Spears se consolido como una de las mejores exponentes del pop, tanto fue su exito que recibio el titulo de "Princesa del Pop". </p>
+                </article>
+            </section>
+        </main>
+        <footer><p>Pie de pagina</p></footer>
+    </body>
+</html>

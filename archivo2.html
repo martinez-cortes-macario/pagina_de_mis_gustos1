@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> MACARIO MARTINEZ</title>
+        <style>
+            header {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #c6c6c2;
+                padding: 10px 20px;
+            }
+            .logo-pequeno2{
+                width: 200px;
+                height: auto;
+                display: block;
+            }
+             .promocion-sitio2{
+                width: 250px;
+                height: auto;
+                display: block;
+            }
+            .articulo-principal2{
+                width: 400px;
+                height: auto;
+                display: block;
+            }
+            .logo-cabecera{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: bottom 15px;
+                /*espacio entre la iamgen y el titulo*/                
+            }
+            .barra-navegacion {
+               display:flex;
+               gap: 15px;
+               margin-top: 10px;
+            }
+            .boton-nav{
+                text-decoration: none;
+                color: darksalmon;
+                background-color: bisque;
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-family: sans-serif;
+                transition: background-color 0.3s;
+            }
+            .boton-nav:hover{
+                background-color: rgb(245, 148,1);
+                color:white;
+            }
+            .boton-nav.activo{
+                background-color: #008380;
+                color: white;
+                font-weight: bold;
+            }
+            main{
+                display: flex;
+                gap:20px;
+            }
+
+            aside{
+                width: 25%;
+                background-color: #868b8c;
+                padding: 15px;
+            }
+
+            section{
+                width: 75%;
+                background-color: #9ea1a0;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0";>MUSICA</h1>
+                <nav class="Barra-navegacion">
+                    <a href="archivo1.html" class="boton-nav">Inicio</a>
+                    <a href="archivo2.html" class="boton-nav activo">Musica</a>
+                    <a href="archivo3.html" class="boton-nav">Artista</a>
+                </nav>
+            </div>
+            <img src="imagenes/musica.jpg" alt="Logo de mi sitio web" class="logo-pequeno2">
+        </header>
+        <main>
+            <aside>
+                <h3>Publicidad</h3>
+                <img src="imagenes/promocion2.jpg" alt="promocion del sitio" class="promocion-sitio2">
+                <p>Rica y deliciosa  Coca-Cola</p>
+            </aside>
+            <section>
+                <article>
+                    <h2>Articulo principal</h2>
+                    <img src="imagenes/articuloprincipal2.jpg" alt="promocion del sitio" class="articulo-principal2">
+                    <p> The Police fue una famosa banda británica de rock y new wave formada en Londres en 1977.</p>
+                </article>
+            </section>
+        </main>
+        <footer><p>Pie de pagina</p></footer>
+    </body>
+</html>
